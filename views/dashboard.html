@@ -16,20 +16,22 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+	<button class="btn btn-danger btn-xs" ng-click="getPhotos()">Get photos uploaded to facebook</button>
 -->
 
 <div class="row">
-	<button class="btn btn-danger btn-xs" ng-click="getPhotos()">Get photos uploaded to facebook</button>
+
 	<div class="col-md-10 col-md-offset-1">
 		<h2 class="title">Dashboard</h2><br>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="panel panel-warning">
 				    <div class="panel-heading">
-				        <h3 class="panel-title">Product Poster <span class="badge">{{numPoster}}</span></h3>
+				        <h3 class="panel-title">Product Posts <span class="badge">{{numPoster}}</span></h3>
 				    </div>
 				    <div class="panel-body">
-				    	<div ng-if="numPoster === 0"> You haven't posted any task yet</div>
+				    	<div ng-if="numPoster === 0"> You haven't posted any products yet</div>
 			        <div ng-repeat="task in taskPoster">
 			        	<a ng-href="#/browse/{{task.taskId}}"> {{task.title}} </a>
 			        </div>
@@ -39,10 +41,10 @@
 			<div class="col-md-6">
 				<div class="panel panel-success">
 				    <div class="panel-heading">
-				        <h3 class="panel-title">Product Runner <span class="badge">{{numRunner}}</span></h3>
+				        <h3 class="panel-title">Product Purchases <span class="badge">{{numRunner}}</span></h3>
 				    </div>
 				    <div class="panel-body">
-				    	<div ng-if="numRunner === 0"> You haven't run any products yet</div>		    	
+				    	<div ng-if="numRunner === 0"> You haven't bought any products yet</div>		    	
 			        <div ng-repeat="task in taskRunner">
 			        	<a ng-href="#/browse/{{task.taskId}}"> {{task.title}} </a>
 			        </div>
