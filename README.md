@@ -7,6 +7,8 @@ sudo npm install -g firebase-tools
 
 git clone https://github.com/riverKanies/PostProduct.git
 
+// change line 12 in scripts/app.js to link your firebase data
+
 // remove firebase.json, then init fb folder and deploy
 
 firebase init
