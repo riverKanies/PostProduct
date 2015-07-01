@@ -1,4 +1,4 @@
-//after installing firebase tools
+//after installing firebase tools \n
 //you must have firebase account...
 sudo npm install -g firebase-tools
 //clone repo
